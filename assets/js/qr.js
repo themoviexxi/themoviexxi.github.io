@@ -24,7 +24,7 @@ __mvX.ready(function(){
 });
 function BX(){
 	var a = window.location.pathname;
-	if(a.match(/\/movie/([a-z0-9-]+).html$/g)){
+	if(a.match(/\/movie\/([a-z0-9-]+).html$/g)){
 		$('head').append('<meta http-equiv="refresh" content="0; url=https://themoviex.github.io'+a+'" />');
 	}
 }
