@@ -1,3 +1,7 @@
+/*
+TheMovieX
+*/
+
 nav {
   background: var(--mv1);
   color: #fff;
@@ -24,7 +28,7 @@ nav .container {
   width: calc(var(--dp) * 36);
   height: calc(var(--dp) * 5);
   padding: 0 calc(var(--dp) * 1);
-  z-index: 2;
+  z-index: 11;
 }
 .search-button {
   background: transparent;
@@ -107,7 +111,7 @@ a#country ~ .__submenu li {
   background: var(--mv2);
   padding-top: calc(var(--dp) * 5);
   border-radius: calc(var(--dp) * 2.5);
-  z-index: 1;
+  z-index: 10;
 }
 .search-suggest-list {
   padding: calc(var(--dp) * 1.5) calc(var(--dp) * 2) calc(var(--dp) * 2);
@@ -364,7 +368,29 @@ main.__main-movie:after {
   position: absolute;
   filter: blur(800px);
 }
+.movie-rec {
+  gap: calc(var(--dp) * 2);
+  margin-bottom: calc(var(--dp) * 2);
+}
+.movie-rec li {
+  width: calc((100% - var(--dp) * 10) / 6);
+}
+.movie-rec h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.__mvr {
+  gap: calc(var(--dp) * 1.5);
+}
+.__mvr h5 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 @media(max-width: 768px) {
+  .movie-rec li {
+    width: calc((100% - var(--dp) * 4) / 3);
+  }
   .navbar-menu {
     display: none!important;
     width: 100%;
@@ -426,7 +452,8 @@ main.__main-movie:after {
     flex-direction: column;
   }
   .movie-meta .article-left,
-  .movie-meta .article-right {
+  .movie-meta .article-right,
+  .movie-rec li {
     width: 100%;
   }
 }
