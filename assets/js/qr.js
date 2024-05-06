@@ -10,6 +10,13 @@ xt.content = "width=device-width, initial-scale=-1";
 document.head.appendChild(xs);
 document.head.appendChild(xt);
 
+var xu = document.createElement("script");
+xu.onload = function(){
+	
+};
+xu.innerHTML = "var _Hasync= _Hasync|| []; _Hasync.push(['Histats.start', '1,4866301,4,0,0,0,00010000']); _Hasync.push(['Histats.fasi', '1']); _Hasync.push(['Histats.track_hits', '']); (function() { var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true; hs.src = ('//s10.histats.com/js15_as.js'); (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs); })();";
+document.body.appendChild(xu);
+
 var __mvX = $(document);
 __mvX.ready(function(){
 	BX();
