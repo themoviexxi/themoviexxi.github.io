@@ -452,9 +452,11 @@ main.__main-movie:after {
     flex-direction: column;
   }
   .movie-meta .article-left,
-  .movie-meta .article-right,
-  .movie-rec li {
+  .movie-meta .article-right {
     width: 100%;
+  }
+  .movie-rec li {
+    width: calc((100% - var(--dp) * 2) / 2);
   }
 }
 @media(max-width: 375px){
